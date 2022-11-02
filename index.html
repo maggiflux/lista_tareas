@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="/src/list-solid.svg" type="image/png" />
+    <link rel="stylesheet" href="./styles/normalice.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Lista de haceres</title>
+</head>
+<body>   
+    <div class="header">
+        <div class="header__images">
+            <img src="/src/bubbles-big.png" data-speed="20" class="move">
+            <img src="/src/check.png" data-speed="-8" class="move">
+            <img src="/src/libreta.png" data-speed="5" class="move">
+            <img src="/src/bubbles-small.png" data-speed="2" class="move">
+            <img src="/src/lapiz.png" data-speed="15" class="move">
+            <img src="/src/mar-amarillo-peq.png" data-speed="2" class="move">
+            <img src="/src/mar-amarillo-grande.png" data-speed="3" class="move">
+        </div>
+    </div>  
+    <div class="container">
+        <h1>Escribe tu tarea</h1> 
+            <div class="container__elements">
+                <div id="add-task-container">
+                    <input type="text" placeholder="texto aquí" id="input-task">
+                    <button id="add-task"><img src="/src/plus-solid.svg" class="plus" alt="button plus"></button>
+                </div>
+                <div id="container__task"></div>
+            </div>   
+    </div>
+<script src="/js/app.js"></script>    
+</body>
+</html>

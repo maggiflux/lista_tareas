@@ -1,0 +1,211 @@
+/* MAIN PRESETS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap");
+
+:root {
+    --text-color: #fff;
+    --light-color: hsla(235, 20%, 57%, 0.089);
+    --body-gradient: linear-gradient(180deg, 
+                hsl(22, 100%, 84%),
+                hsl(265, 100%, 80%));
+    --color-oscuro: hsl(235, 32%, 10%);
+    --container-color: hsla(234, 28%, 21%, 0.87);
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.8rem;
+    --small-font-size: .8rem;
+    --text-font-size: 1.3rem;
+    --font-bold: bolder;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--body-font);
+    background: var(--body-gradient);
+    background-color: hsl(265, 100%, 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* IMAGES */
+
+.header {
+    width: 90%;
+    height: 18rem;
+    margin: 3rem auto;
+    position: relative;
+    -ms-grid-column-align: center;
+        justify-self: center;
+}
+
+.header__images {
+    -webkit-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition: ease-in-out;
+    width: 23rem;
+    height: 100%;
+    margin: auto;
+}
+
+.header__images > img {
+   position: absolute;
+   height: 100%;
+}
+
+.header__images :nth-child(1) {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+
+.header__images :nth-child(2) {
+    -webkit-filter: blur(6px);
+            filter: blur(6px);
+}
+
+.header__images :nth-child(4) {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+}
+
+.header__images :nth-child(6) {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+}
+
+/* TASK LIST */
+
+.container {
+    width: 100%;    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.container > h1 {
+    font-weight: var(--font-bold);
+    color: var(--color-oscuro);
+    text-align: center;
+    font-size: var(--biggest-font-size);
+    -webkit-animation:  fadein 1.5s ease-in 0.5s;
+            animation:  fadein 1.5s ease-in 0.5s;
+}
+
+@-webkit-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.container__elements {
+    width: 90%;
+    padding: .6rem;
+    background-color: var(--container-color);
+    -webkit-box-shadow: 0 10px 24px rgba(26, 28, 50, 0.438);
+            box-shadow: 0 10px 24px rgba(26, 28, 50, 0.438);
+    border-radius: 25px;
+    margin-bottom: 2rem;
+}
+
+#add-task-container {
+    padding: 2rem 2rem 4rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+input {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: var(--small-font-size);
+    padding: 5px;
+    font-family: inherit;
+}
+
+.task {
+    color: #fff;
+    font-size: var(--normal-font-size);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: .5rem;
+}
+
+.task li {
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+    overflow-y: hidden;
+    margin: .1rem;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding: .4em;
+    border-radius: .5rem 0 0 .5rem;
+    font-size: 1.3rem;
+    background-color: var(--light-color);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+/* BUTTONS */
+
+#add-task {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.task > button {
+    border-radius: 10px;
+    margin: .2rem;   
+    width: 2.8rem;
+    height: 2.8rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: var(--color-oscuro);
+}
+
+.plus, 
+.trash, 
+.check {
+    width: 1.3rem;
+}
+
+
+
+
+
+
